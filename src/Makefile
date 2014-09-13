@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-I ./include/ -Wall -nostdlib
+CFLAGS=-I ./inc/ -Wall -nostdlib
 
 all: *.c
 	$(CC) $(CFLAGS) -c *.c

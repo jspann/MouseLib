@@ -10,6 +10,7 @@
 #define _io_h
 
 #define EOF -1
+#define assert(ignore)((void) 0)
 
 #pragma mark File data
 typedef unsigned int FILE;
