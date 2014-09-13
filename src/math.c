@@ -12,6 +12,10 @@ int abs(int a){
     return (a>0)?a:-a;
 }
 
+double abc(double a){
+    return (a>0)?a:-a;
+}
+
 double pow(double a, double b){//b is the exponenet
     double c = 1;
     for (int i=0;i<b;i++){
