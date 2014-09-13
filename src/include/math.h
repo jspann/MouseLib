@@ -13,7 +13,8 @@
 
 extern int abs(int a);
 extern double pow(double a, double b);
-extern double factorial(int x);
+extern int fact(int a);
+extern double sqrt();
 
 extern double sin(double a);
 extern double cos(double a);

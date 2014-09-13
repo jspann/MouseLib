@@ -19,14 +19,11 @@ double pow(double a, double b){//b is the exponenet
     }
     return c;
 }
- 
-int factorial(int a){
-    int b = 1;
-    for (int i=1;i<=a;i++){
-        b *= i;
-    }
-    return b;
+
+int fact(int a){
+    return (a==1)? 1 : (a*fact(a-1));
 }
+
     
 double sin(double a){
     // Taylor series: slow
