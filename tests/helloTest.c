@@ -11,5 +11,6 @@ int main(){
     int x = sin(0.5);
     int y = pow(2,3);
     int z = abs(12);
+    int xx = abc(-3.19)
     return 0;
 }
