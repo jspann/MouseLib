@@ -8,3 +8,7 @@
 
 #include <io.h>
 
+void exit(int v){
+    __asm__ volatile("hlt");
+
+}

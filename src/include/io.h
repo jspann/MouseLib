@@ -11,18 +11,13 @@
 
 #define EOF -1
 
-#define stdout   (__iob[1])
-
-
 #pragma mark File data
-typedef struct FILE
-{
-};
+typedef unsigned int FILE;
 
 //FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 #pragma mark Stream data
 #pragma mark Miscellaneous
-
+extern void exit(int v);
 
 #endif
