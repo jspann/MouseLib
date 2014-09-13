@@ -1,2 +1,5 @@
 -Add printf function
 -Complete math functions
+-Add isalphanumeric
+-Add isEOF
+-Change abc to fabs (for double abs)
