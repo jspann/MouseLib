@@ -12,6 +12,7 @@
 #define M_PI 3.14159265358979323846264338327
 
 extern int abs(int a);
+extern double abc(double a);
 extern double pow(double a, double b);
 extern int fact(int a);
 extern double sqrt();
