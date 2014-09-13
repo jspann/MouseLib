@@ -9,10 +9,12 @@
 #ifndef _string_h
 #define _string_h
 
-typedef struct String{
+/*typedef String{
     
-};
+};*/
 
-int isequal(String x, String y);
-int getLen(String x);
+typedef int String;
+
+extern int isequal(String x, String y);
+extern int getLen(String x);
 #endif
