@@ -18,9 +18,5 @@
 
 typedef unsigned char byte;
 
-typedef struct FILE
-{
-} FILE;
-
 
 #endif
