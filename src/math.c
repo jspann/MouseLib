@@ -29,15 +29,34 @@ int factorial(int a){
 }
     
 double sin(double a){
+    // Taylor series: slow
+    //return a - pow(a,3)/factorial(3) + pow(a,5)/factorial(5) - pow(a,7)/factorial(7) + pow(a,9)/factorial(9);
     
+    double b;
+    while (a > M_PI){
+        a -= 2*M_PI;
+    }
+    while (a < -1*M_PI){
+        a += 2*M_PI;
+    }
+    
+    if (x < 0){
+        b = 1.27323954 * x + .405284735 * x * x;
+        b = (b < 0)?0.225*(b*-b-b)+b:0.225*(b*b-b)+b;
+    }
+    else{
+        b = 1.27323954 * x - 0.405284735 * x * x;
+        b = (b < 0)?0.225*(b*-b-b)+b:0.225*(b*b-b)+b;
+    }
+    return b;
 }
 
 double cos(double a){
-    
+    return sin(a-M_PI/2);
 }
 
 double tan(double a){
-    
+    return sin(a)/sin(a-M_PI/2);
 }
 
 int rand(void){
