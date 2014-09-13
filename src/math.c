@@ -28,7 +28,7 @@ int fact(int a){
 double sin(double a){
     while (a > M_PI)    a -= 2*M_PI;
     while (a < -1*M_PI) a += 2*M_PI;
-    return a - pow(a,3)/factorial(3) + pow(a,5)/factorial(5) - pow(a,7)/factorial(7) + pow(a,9)/factorial(9);    
+    return a - pow(a,3)/fact(3) + pow(a,5)/fact(5) - pow(a,7)/fact(7) + pow(a,9)/fact(9);    
 }
 
 double cos(double a){
