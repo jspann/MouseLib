@@ -63,3 +63,11 @@ int rand(void){
     }*/
     
 }
+
+double factorial(int x){
+    int d = 1;
+    for (int i =x; i>0; i--) {
+        d *= i;
+    }
+    return d;
+}
