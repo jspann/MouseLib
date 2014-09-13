@@ -9,5 +9,7 @@
 #ifndef _assert_h
 #define _assert_h
 
+#define assert(ignore)((void) 0)
+
 
 #endif
