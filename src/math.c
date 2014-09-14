@@ -8,6 +8,8 @@
 
 #include <math.h>
 
+unsigned short rand_pos = 0xACE1u;
+
 int abs(int a){
     return (a>0)?a:-a;
 }
@@ -43,7 +45,26 @@ double tan(double a){
     return sin(a)/sin(a-M_PI/2);
 }
 
+// Take position determined in srand and cycles throug 57 more
+// Very pseudo-random
 int rand(void){
     //http://xkcd.com/221/
-    return 4;
+    //return 4;
+    unsigned b;
+    for (int i=0;i<57;i++){
+        b = ((rand_pos>>0)^(rand_pos>>2)^(rand_pos>>3)^(rand_pos>>5))&1;
+        rand_pos = (rand_pos>>1)|(b<<15);
+    }
+    return rand_pos;
+}
+
+// Cycle through rand_pos a-times
+void srand(int a){
+    //Fibbonacci linear feedback shift register
+    unsigned b;
+    for (int i=0;i<a;i++){
+        b = ((rand_pos>>0)^(rand_pos>>2)^(rand_pos>>3)^(rand_pos>>5))&1;
+        rand_pos = (rand_pos>>1)|(b<<15);
+    }
+    
 }
