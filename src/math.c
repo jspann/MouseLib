@@ -51,7 +51,7 @@ int rand(void){
     //http://xkcd.com/221/
     //return 4;
     unsigned b;
-    for (int i=0;i<57;i++){
+    for (int i=0;i<59;i++){
         b = ((rand_pos>>0)^(rand_pos>>2)^(rand_pos>>3)^(rand_pos>>5))&1;
         rand_pos = (rand_pos>>1)|(b<<15);
     }
