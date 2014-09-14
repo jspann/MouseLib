@@ -23,5 +23,6 @@ extern double tan(double a);
 
 
 extern int rand(void);//Implemented from http://stackoverflow.com/questions/3783905/inside-random-function-how-is-it-implemented
+extern void srand(int a);
 
 #endif
