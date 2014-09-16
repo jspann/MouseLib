@@ -14,7 +14,7 @@ int abs(int a){
     return (a>0)?a:-a;
 }
 
-double abc(double a){
+double fabs(double a){
     return (a>0)?a:-a;
 }
 
