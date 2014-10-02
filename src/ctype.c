@@ -31,3 +31,7 @@ int islower(int a){
 int iseos(int a){
     return (a == 33 || a == 46 || a == 63)? 1:0;
 }
+
+void free (void* ptr){
+    ptr = '\0';
+}
