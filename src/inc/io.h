@@ -13,9 +13,12 @@
 #define assert(ignore)((void) 0)
 
 #pragma mark File data
-typedef unsigned int FILE;
-
-//FILE *fopen(const char *restrict filename, const char *restrict mode);
+//typedef unsigned int FILE;
+typedef struct MyStruct {
+    int data1;
+    char data2;
+} FILE;
+FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 #pragma mark Stream data
 #pragma mark Miscellaneous
