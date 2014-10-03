@@ -5,5 +5,8 @@ all: *.c
 	$(CC) $(CFLAGS) -c *.c
 	$ ar rcs mouselib.a *.o
 
+file:
+	ar -t mouselib.a
+
 clean:
 	rm -f *.o *.a
