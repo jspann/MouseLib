@@ -9,11 +9,10 @@
 #ifndef _string_h
 #define _string_h
 
-/*typedef String{
-    
-};*/
-
-typedef int String;
+typedef struct {
+    int length;
+    char letters[32];
+} String;
 
 extern int isequal(String x, String y);
 extern int getLen(String x);
