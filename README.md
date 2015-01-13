@@ -9,6 +9,9 @@ Mouselib is designed to be easily portable across 32 and 64 bit systems.
 ## How do I compile Mouselib?
 To compile Mouselib make sure you have gcc, and run the makefile (by typing `make` in the terminal) in the "src" folder.
 
+## Where are the functions defined?
+In a file called Functions.txt
+
 ## Is it under a license?
 Yup! MIT License (Look at the file called LICENSE)
 

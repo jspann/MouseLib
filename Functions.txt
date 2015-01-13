@@ -1,0 +1,22 @@
+Defined functions:
+
+Math.h
+int abs(int a)
+double fabs(double a)
+double pow(double a, double b)
+int fact(int a)
+double sin(double a)
+double cos(double a)
+double tan(double a)
+int rand(void)
+void srand(int a)
+double dsolve(char *Equation)
+
+ctype.h
+int isalpha(int a)
+int isdigit(int a)
+int isspace(int a)
+int isupper(int a)
+int islower(int a)
+int iseos(int a)
+void free (void* ptr)
