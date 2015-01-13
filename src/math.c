@@ -68,3 +68,8 @@ void srand(int a){
     }
     
 }
+
+//RegEx Solve function
+double dsolve(char *Equation){
+	
+}
