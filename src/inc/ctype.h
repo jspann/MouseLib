@@ -9,6 +9,13 @@
 #ifndef _ctype_h
 #define _ctype_h
 
+#define TRUE 1
+#define FALSE 0
+
+typedef unsigned char bool;
+
+
+
 extern int isalpha(int a);//abc
 extern int isdigit(int a);//123
 extern int isspace(int a);// ' ' \n
