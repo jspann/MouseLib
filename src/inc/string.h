@@ -8,11 +8,15 @@
 
 #ifndef _string_h
 #define _string_h
-
-typedef struct {
-    int length;
-    char letters[32];
-} String;
+#import "ctype.h"
+typedef struct{
+	char letters[32];
+	bool equals(String mystr);
+	char charAt(int);
+	int length(String mystr);
+	void append()
+	
+}String;
 
 extern int isequal(String x, String y);
 extern int getLen(String x);
