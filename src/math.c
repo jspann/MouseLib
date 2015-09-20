@@ -20,7 +20,8 @@ double fabs(double a){
 
 double pow(double a, double b){//b is the exponenet
     double c = 1;
-    for (int i=0;i<b;i++){
+    int i;
+    for (i=0;i<b;i++){
         c *= a;
     }
     return c;
@@ -51,7 +52,8 @@ int rand(void){
     //http://xkcd.com/221/
     //return 4;
     unsigned b;
-    for (int i=0;i<59;i++){
+    int i;
+    for (i=0;i<59;i++){
         b = ((rand_pos>>0)^(rand_pos>>2)^(rand_pos>>3)^(rand_pos>>5))&1;
         rand_pos = (rand_pos>>1)|(b<<15);
     }
@@ -62,7 +64,8 @@ int rand(void){
 void srand(int a){
     //Fibbonacci linear feedback shift register
     unsigned b;
-    for (int i=0;i<a;i++){
+    int i;
+    for (i=0;i<a;i++){
         b = ((rand_pos>>0)^(rand_pos>>2)^(rand_pos>>3)^(rand_pos>>5))&1;
         rand_pos = (rand_pos>>1)|(b<<15);
     }
