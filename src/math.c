@@ -8,6 +8,10 @@
 
 #include <math.h>
 
+#ifndef M_PI
+#define 3.14159
+#endif
+
 unsigned short rand_pos = 0xACE1u;
 
 int abs(int a){
